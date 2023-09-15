@@ -4,19 +4,20 @@ import (
 	"github.com/KazanExpress/tflint-ruleset/rules"
 	"github.com/terraform-linters/tflint-plugin-sdk/plugin"
 	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+
+	"github.com/terraform-linters/tflint-ruleset-terraform/project"
+	"github.com/terraform-linters/tflint-ruleset-terraform/terraform"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
-		RuleSet: &tflint.BuiltinRuleSet{
-			Name:    "ke-ruleset",
-			Version: "0.1.0",
-			Rules: []tflint.Rule{
-				rules.NewAwsInstanceExampleTypeRule(),
-				rules.NewAwsS3BucketExampleLifecycleRule(),
-				rules.NewGoogleComputeSSLPolicyRule(),
-				rules.NewTerraformBackendTypeRule(),
+
+		RuleSet: &terraform.RuleSet{
+			BuiltinRuleSet: tflint.BuiltinRuleSet{
+				Name:    "terraform",
+				Version: project.Version,
 			},
+			PresetRules: rules.PresetRules,
 		},
 	})
 }

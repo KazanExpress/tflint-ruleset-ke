@@ -18,7 +18,7 @@ You can install the plugin with `tflint --init`. Declare a config in `.tflint.hc
 plugin "template" {
   enabled = true
 
-  version = "0.1.0"
+  version = "0.2.0"
   source  = "github.com/KazanExpress/tflint-ruleset"
 
   signing_key = <<EOF
@@ -83,10 +83,7 @@ EOF
 
 |Name|Description|Severity|Enabled|Link|
 | --- | --- | --- | --- | --- |
-|aws_instance_example_type|Example rule for accessing and evaluating top-level attributes|ERROR|✔||
-|aws_s3_bucket_example_lifecycle_rule|Example rule for accessing top-level/nested blocks and attributes under the blocks|ERROR|✔||
-|google_compute_ssl_policy|Example rule with a custom rule config|WARNING|✔||
-|terraform_backend_type|Example rule for accessing other than resources|ERROR|✔||
+|terraform_module_version| Checks whether terraform module version is not very old|WARNING|✔||
 
 ## Building the plugin
 
