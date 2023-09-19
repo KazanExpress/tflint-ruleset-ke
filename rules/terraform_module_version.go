@@ -3,7 +3,7 @@ package rules
 import (
 	"strings"
 
-	"github.com/KazanExpress/tflint-ruleset/project"
+	"github.com/KazanExpress/tflint-ruleset-ke/project"
 	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
 	"github.com/terraform-linters/tflint-ruleset-terraform/terraform"
 	"golang.org/x/mod/semver"

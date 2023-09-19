@@ -1,4 +1,4 @@
-module github.com/KazanExpress/tflint-ruleset
+module github.com/KazanExpress/tflint-ruleset-ke
 
 go 1.21
 

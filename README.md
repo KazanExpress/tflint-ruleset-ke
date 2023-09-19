@@ -1,5 +1,5 @@
 # KazanExpress TFLint Ruleset
-[![Build Status](https://github.com/KazanExpress/tflint-ruleset/workflows/build/badge.svg?branch=main)](https://github.com/KazanExpress/tflint-ruleset/actions)
+[![Build Status](https://github.com/KazanExpress/tflint-ruleset-ke/workflows/build/badge.svg?branch=main)](https://github.com/KazanExpress/tflint-ruleset-ke/actions)
 
 This is tflint ruleset used in KazanExpress team for better terraform code quality.
 
@@ -16,8 +16,8 @@ You can install the plugin with `tflint --init`. Declare a config in `.tflint.hc
 plugin "ke" {
   enabled = true
 
-  version = "0.3.1"
-  source  = "github.com/KazanExpress/tflint-ruleset"
+  version = "0.4.0"
+  source  = "github.com/KazanExpress/tflint-ruleset-ke-ke"
 
   signing_key = <<EOF
 -----BEGIN PGP PUBLIC KEY BLOCK-----

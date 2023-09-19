@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/KazanExpress/tflint-ruleset/rules"
+	"github.com/KazanExpress/tflint-ruleset-ke/rules"
 	"github.com/terraform-linters/tflint-plugin-sdk/plugin"
 	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
 
