@@ -29,7 +29,7 @@ checksum:
 release:
   github:
     owner: KazanExpress
-    name: tflint-ruleset
+    name: tflint-ruleset-ke
 
 signs:
   - artifacts: checksum
