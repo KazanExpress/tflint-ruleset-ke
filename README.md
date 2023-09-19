@@ -1,7 +1,7 @@
 # KazanExpress TFLint Ruleset
 [![Build Status](https://github.com/KazanExpress/tflint-ruleset/workflows/build/badge.svg?branch=main)](https://github.com/KazanExpress/tflint-ruleset/actions)
 
-This is a template repository for building a custom ruleset. You can create a plugin repository from "Use this template". See also [Writing Plugins](https://github.com/terraform-linters/tflint/blob/master/docs/developer-guide/plugins.md).
+This is tflint ruleset used in KazanExpress team for better terraform code quality.
 
 ## Requirements
 
@@ -10,15 +10,13 @@ This is a template repository for building a custom ruleset. You can create a pl
 
 ## Installation
 
-TODO: This template repository does not contain release binaries, so this installation will not work. Please rewrite for your repository. See the "Building the plugin" section to get this template ruleset working.
-
 You can install the plugin with `tflint --init`. Declare a config in `.tflint.hcl` as follows:
 
 ```hcl
 plugin "ke" {
   enabled = true
 
-  version = "0.3.0"
+  version = "0.3.1"
   source  = "github.com/KazanExpress/tflint-ruleset"
 
   signing_key = <<EOF
