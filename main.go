@@ -14,7 +14,7 @@ func main() {
 
 		RuleSet: &terraform.RuleSet{
 			BuiltinRuleSet: tflint.BuiltinRuleSet{
-				Name:    "terraform",
+				Name:    "ke",
 				Version: project.Version,
 			},
 			PresetRules: rules.PresetRules,

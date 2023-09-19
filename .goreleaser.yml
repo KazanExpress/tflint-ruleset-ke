@@ -26,6 +26,11 @@ checksum:
   name_template: 'checksums.txt'
   extra_files:
     - glob: ./dist/raw/*
+release:
+  github:
+    owner: KazanExpress
+    name: tflint-ruleset
+
 signs:
   - artifacts: checksum
     args: ["--batch", "-u", "{{ .Env.GPG_FINGERPRINT }}", "--output", "${signature}", "--detach-sign", "${artifact}"]

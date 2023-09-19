@@ -15,10 +15,10 @@ TODO: This template repository does not contain release binaries, so this instal
 You can install the plugin with `tflint --init`. Declare a config in `.tflint.hcl` as follows:
 
 ```hcl
-plugin "template" {
+plugin "ke" {
   enabled = true
 
-  version = "0.2.0"
+  version = "0.3.0"
   source  = "github.com/KazanExpress/tflint-ruleset"
 
   signing_key = <<EOF
