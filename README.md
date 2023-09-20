@@ -16,7 +16,7 @@ You can install the plugin with `tflint --init`. Declare a config in `.tflint.hc
 plugin "ke" {
   enabled = true
 
-  version = "0.4.0"
+  version = "0.4.1"
   source  = "github.com/KazanExpress/tflint-ruleset-ke-ke"
 
   signing_key = <<EOF
